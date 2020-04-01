@@ -28,14 +28,8 @@ registerMicroApps(
       activeRule: genActiveRule('/vue'),
     },
     {
-      name: 'purehtml',
-      entry: '//localhost:7105',
-      render,
-      activeRule: genActiveRule('/purehtml'),
-    },
-    {
       name: 'r-purehtml',
-      entry: '//localhost:7105',
+      entry: '//localhost:7106',
       render,
       activeRule: genActiveRule('/r-purehtml'),
     },
