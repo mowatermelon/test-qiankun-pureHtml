@@ -33,12 +33,6 @@ registerMicroApps(
       render,
       activeRule: genActiveRule('/purehtml'),
     },
-    {
-      name: 'r-purehtml',
-      entry: '//localhost:7105',
-      render,
-      activeRule: genActiveRule('/r-purehtml'),
-    },
   ],
   {
     beforeLoad: [
