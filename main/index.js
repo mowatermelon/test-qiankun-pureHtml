@@ -7,6 +7,10 @@ import './index.less';
  */
 import render from './render/VueRender'
 
+function genActiveRuleEx(routerPrefix) {
+  return location => location.pathname === routerPrefix;
+}
+
 function genActiveRule(routerPrefix) {
   return location => location.pathname.startsWith(routerPrefix);
 }
@@ -27,11 +31,17 @@ registerMicroApps(
       render,
       activeRule: genActiveRule('/vue'),
     },
+    // {
+    //   name: 'purehtml',
+    //   entry: '//localhost:7105',
+    //   render,
+    //   activeRule: genActiveRule('/purehtml'),
+    // },
     {
-      name: 'purehtml',
+      name: 'purehtml-about',
       entry: '//localhost:7105',
       render,
-      activeRule: genActiveRule('/purehtml'),
+      activeRule: genActiveRuleEx('/purehtml/about.html'),
     },
   ],
   {
