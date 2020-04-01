@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>QianKun Example</title>
+</head>
+
+<body>
+  <div class="mainapp">
+    <!-- 标题栏 -->
+    <header class="mainapp-header">
+      <h1>QianKun</h1>
+    </header>
+    <div class="mainapp-main">
+      <!-- 侧边栏 -->
+      <ul class="mainapp-sidemenu">
+        <li onclick="push('/vue/About')">Vue</li>
+        <li onclick="push('/purehtml')">Purehtml</li> 
+        <li onclick="push('/purehtml/about.html')">Purehtml about</li> 
+        <li onclick="push('/r-purehtml')">Purehtml-r</li> 
+        <li onclick="push('/r-purehtml/about.html')">Purehtml-r about</li> 
+      </ul>
+      <!-- 子应用  -->
+      <main id="subapp-container"></main>
+    </div>
+  </div>
+
+  <script src="./index.js"></script>
+  <script>
+    function push(subapp) { history.pushState(null, subapp, subapp) }
+  </script>
+</body>
+
+</html>
