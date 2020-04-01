@@ -31,17 +31,17 @@ registerMicroApps(
       render,
       activeRule: genActiveRule('/vue'),
     },
-    // {
-    //   name: 'purehtml',
-    //   entry: '//localhost:7105',
-    //   render,
-    //   activeRule: genActiveRule('/purehtml'),
-    // },
     {
       name: 'purehtml-about',
-      entry: '//localhost:7105',
+      entry: '//localhost:7105/about.html', // 这里要具体到传统页面
       render,
       activeRule: genActiveRuleEx('/purehtml/about.html'),
+    },
+    {
+      name: 'purehtml-a',
+      entry: '//localhost:7105/index.html',
+      render,
+      activeRule: genActiveRuleEx('/purehtml/index.html'),
     },
   ],
   {
