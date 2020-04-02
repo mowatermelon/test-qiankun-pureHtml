@@ -5,17 +5,17 @@
         __webpack_public_path__ = global.__INJECTED_PUBLIC_PATH_BY_QIANKUN__;
     }
     const { log } = console;
-    global['purehtml-r'] = {
+    global['purehtml-q'] = {
         bootstrap: () => {
-            log('purehtml-r bootstrap');
+            log('purehtml-q bootstrap');
             return Promise.resolve();
         },
         mount: () => {
-            log('purehtml-r mount');
+            log('purehtml-q mount');
             return Promise.resolve();
         },
         unmount: () => {
-            log('purehtml-r unmount');
+            log('purehtml-q unmount');
             return Promise.resolve();
         }
     };

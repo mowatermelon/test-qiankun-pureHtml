@@ -28,10 +28,10 @@ registerMicroApps(
       activeRule: genActiveRule('/vue'),
     },
     {
-      name: 'r-purehtml',
+      name: 'purehtml-q',
       entry: '//localhost:7106',
       render,
-      activeRule: genActiveRule('/r-purehtml'),
+      activeRule: genActiveRule('/q-purehtml'),
     },
   ],
   {
@@ -63,7 +63,7 @@ setDefaultMountApp('/vue');
  */
 start({
   prefetch: true,
-  jsSandbox: true,
+  jsSandbox: false,
   singular: true,
   fetch: window.fetch,
 });
