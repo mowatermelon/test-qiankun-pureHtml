@@ -5,7 +5,6 @@
         __webpack_public_path__ = global.__INJECTED_PUBLIC_PATH_BY_QIANKUN__;
     }
     const { log } = console;
-    debugger;
     global['purehtml-r'] = {
         bootstrap: () => {
             log('purehtml-r bootstrap');

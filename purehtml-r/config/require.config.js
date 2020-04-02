@@ -1,7 +1,6 @@
 'use strict';
 
 (function (require) {
-    debugger;
     var methods = {
         getNowDate: function() {
             var NOW = new Date();
@@ -31,6 +30,9 @@
             // Require插件
             'domReady': defaultPath + '/plugins/requirejs/require.domReady',
             'lodash': defaultPath + '/plugins/lodash/lodash.4.17.10.min',
+
+            'common': defaultPath + '/util/common',
+            'regularHelper': defaultPath + '/util/regularHelper',
         },
         // 配置加载css解析器
         map: {
