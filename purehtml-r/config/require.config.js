@@ -33,6 +33,13 @@
 
             'common': defaultPath + '/util/common',
             'regularHelper': defaultPath + '/util/regularHelper',
+
+            // ztree
+            'jquery': defaultPath + '/plugins/jQuery/jquery.min',
+            'ztree.core': defaultPath + '/plugins/zTree.min/js/jquery.ztree.core',
+            'ztree.exhide': defaultPath + '/plugins/zTree.min/js/jquery.ztree.exhide',
+            'ztree.exedit': defaultPath + '/plugins/zTree.min/js/jquery.ztree.exedit',
+            'ztree.excheck': defaultPath + '/plugins/zTree.min/js/jquery.ztree.excheck',
         },
         // 配置加载css解析器
         map: {
@@ -49,6 +56,18 @@
                     // 避免lodash的全局'_'对象传染
                     return _;
                 }
+            },
+            'ztree.core': {
+                deps: ['jquery', 'css!metroStyle']
+            },
+            'ztree.exhide': {
+                deps: ['jquery', 'ztree.core', 'css!metroStyle']
+            },
+            'ztree.exedit': {
+                deps: ['jquery', 'ztree.core', 'css!metroStyle']
+            },
+            'ztree.excheck': {
+                deps: ['jquery', 'ztree.core', 'css!metroStyle']
             },
         },
         waitSeconds: 30
