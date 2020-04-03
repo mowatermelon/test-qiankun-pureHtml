@@ -30,6 +30,9 @@
               { id:23, pid:2, name:"随意勾选 2-3"}
           ],
         setting: {
+          check: {
+              enable: true
+          },
           view: { showIcon: true },
           data: {
               simpleData: {
