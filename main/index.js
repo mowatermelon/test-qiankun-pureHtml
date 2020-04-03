@@ -63,7 +63,7 @@ setDefaultMountApp('/vue');
  */
 start({
   prefetch: true,
-  jsSandbox: false,
+  jsSandbox: true,
   singular: true,
   fetch: window.fetch,
 });
