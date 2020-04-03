@@ -1,7 +1,7 @@
 <template>
   <div class="about">
     <h1>This is about page</h1>
-    <giant-tree :nodes="nodes" />
+    <giant-tree :nodes="nodes" :setting ='setting'/>
   </div>
 </template>
 <script>
@@ -29,7 +29,17 @@
               { id:222, pid:22, name:"随意勾选 2-2-2"},
               { id:23, pid:2, name:"随意勾选 2-3"}
           ],
-        setting: {view: {showIcon: true}}
+        setting: {
+          view: { showIcon: true },
+          data: {
+              simpleData: {
+                  enable: true,
+                  idKey: "id",
+                  pIdKey: "pid",
+                  rootPId: 0
+              }
+          }
+        }
       }
     }
   }

@@ -3,7 +3,17 @@
 $(function() {
     // const { warn: log } = console;
     const renderId = 'ztreeDemo';
-    const operationSetting = {view: {showIcon: true}};
+    const operationSetting = {
+        view: { showIcon: true },
+        data: {
+            simpleData: {
+                enable: true,
+                idKey: "id",
+                pIdKey: "pid",
+                rootPId: 0
+            }
+        }
+    };
     const treeNodes = [
         { id:1, pid:0, name:"随意勾选 1", open:true},
         { id:11, pid:1, name:"随意勾选 1-1", open:true},
