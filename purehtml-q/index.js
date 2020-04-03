@@ -4,6 +4,9 @@ $(function() {
     // const { warn: log } = console;
     const renderId = 'ztreeDemo';
     const operationSetting = {
+        check: {
+            enable: true
+        },
         view: { showIcon: true },
         data: {
             simpleData: {
