@@ -56,7 +56,7 @@ registerMicroApps(
 /**
  * Step3 设置默认进入的子应用
  */
-setDefaultMountApp('/vue');
+setDefaultMountApp('/vue/About');
 
 /**
  * Step4 启动应用
