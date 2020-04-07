@@ -12,7 +12,7 @@
         },
         mount: () => {
             log('purehtml-q mount');
-            return Promise.resolve();
+            return window.render($);
         },
         unmount: () => {
             log('purehtml-q unmount');

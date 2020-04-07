@@ -1,7 +1,7 @@
 'use strict';
-
-$(function() {
+window.render = function() {
     // const { warn: log } = console;
+    $('#purehtml-container').html('Hello, render with jQuery');
     const renderId = 'ztreeDemo';
     const operationSetting = {
         check: {
@@ -33,4 +33,5 @@ $(function() {
         { id:23, pid:2, name:"随意勾选 2-3"}
     ];
     $.fn.zTree.init($(`#${renderId}`), operationSetting, treeNodes);
-});
+    return Promise.resolve();
+};
